@@ -1,46 +1,33 @@
-# Игнорировать все файлы и папки в директории выше (..)
-# Это предотвратит случайное добавление файлов с Рабочего стола
+# Игнорировать ВСЕ файлы и папки во всех родительских директориях
 ..*
 
-# Игнорировать сам файл .gitignore.txt (на всякий случай)
-.gitignore.txt
+# Игнорировать ВСЕ файлы и папки в корне репозитория (в текущей папке)
+*.*
 
-# Игнорировать все файлы в текущей папке, которые начинаются с точки
-.*
-
-# Игнорировать все файлы и папки в родительских директориях
-/*/
+# Но разрешить сам .gitignore
 !/.gitignore
 
-# Системные файлы и папки Windows
-Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
+# Игнорировать стандартные системные и пользовательские папки Windows
 AppData/
 Contacts/
 Cookies/
+Desktop/
+Documents/
 Downloads/
 Favorites/
 Links/
 Music/
-My Documents/
-My Music/
-My Pictures/
-My Videos/
-NetHood/
-PrintHood/
-Recent/
-SendTo/
-Templates/
+Pictures/
+Saved Games/
+Searches/
+Videos/
 
-# Временные файлы и логи
-*.log
-*.tmp
-*.blf
-*.regtrans-ms
-
-# Кэш приложений
+# Игнорировать временные и скрытые файлы
+Thumbs.db
+desktop.ini
+.bash_history
 .cache/
+.gitconfig
 .lesshst
 .matplotlib/
 .ssh/
@@ -48,3 +35,11 @@ Templates/
 .u2net/
 .vscode-shared/
 .vscode/
+*.log
+*.tmp
+*.blf
+*.regtrans-ms
+
+# Игнорировать файлы OneDrive и временные папки
+[Oo]neDrive/
+~$*
