@@ -1,0 +1,45 @@
+# Игнорировать ВСЕ файлы и папки во всех родительских директориях
+..*
+
+# Игнорировать ВСЕ файлы и папки в корне репозитория (в текущей папке)
+*.*
+
+# Но разрешить сам .gitignore
+!/.gitignore
+
+# Игнорировать стандартные системные и пользовательские папки Windows
+AppData/
+Contacts/
+Cookies/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+Links/
+Music/
+Pictures/
+Saved Games/
+Searches/
+Videos/
+
+# Игнорировать временные и скрытые файлы
+Thumbs.db
+desktop.ini
+.bash_history
+.cache/
+.gitconfig
+.lesshst
+.matplotlib/
+.ssh/
+.thumbnails/
+.u2net/
+.vscode-shared/
+.vscode/
+*.log
+*.tmp
+*.blf
+*.regtrans-ms
+
+# Игнорировать файлы OneDrive и временные папки
+[Oo]neDrive/
+~$*
